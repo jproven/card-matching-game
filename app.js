@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'high_priestess', img: 'images/Tarot_The_High_Priestess.webp' },
         { name: 'lovers', img: 'images/Tarot_The_Lovers.webp' },
         { name: 'magician', img: 'images/Tarot_The_Magician.webp' },
+        { name: 'justice', img: 'images/Tarot_Justice.webp' },
     ]
 
     const cardArray = [...baseCards, ...baseCards] // duplica las cartas
