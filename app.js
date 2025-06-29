@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'justice', img: 'images/Tarot_Justice.webp' },
     ]
 
-    const cardArray = [...baseCards, ...baseCards] // duplica las cartas
+    const cardArray = [...baseCards, ...baseCards] // Duplicate the cards for matching
     cardArray.sort(() => 0.5 - Math.random())
 
     const grid = document.querySelector('.grid')
@@ -42,8 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const optionTwoId = cardsChosenId[1]
         if (cardsChosen[0] === cardsChosen[1]) {
             alert('You found a match!')
-            cards[optionOneId].setAttribute('src', 'images/white.jpg')
-            cards[optionTwoId].setAttribute('src', 'images/white.jpg')
+            cards[optionOneId].style.visibility = 'hidden'
+            cards[optionTwoId].style.visibility = 'hidden'
+            cards[optionOneId].removeEventListener('click', flipCard)
+            cards[optionTwoId].removeEventListener('click', flipCard)
             cardsWon.push(cardsChosen)
         } else {
             cards[optionOneId].setAttribute('src', 'images/blank.webp')
