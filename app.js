@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         var cards = document.querySelectorAll('img')
         const optionOneId = cardsChosenId[0]
         const optionTwoId = cardsChosenId[1]
-        if (cardsChosen[0] === cardsChosen[1]) {
+        if (cardsChosen[0] === cardsChosen[1] && cardsChosenId[0] !== cardsChosenId[1]) {
             alert('You found a match!')
             cards[optionOneId].style.visibility = 'hidden'
             cards[optionTwoId].style.visibility = 'hidden'
