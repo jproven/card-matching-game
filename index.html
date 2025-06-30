@@ -1,5 +1,6 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,33 @@
     <link rel="stylesheet" href="styles.css">
     <script src="app.js" defer></script>
 </head>
-<body>
-    <h3>Score:<span id="result"></span></h3>
 
-    <div class="grid"></div>
+<body>
+    <!-- Top panel -->
+    <header class="topbar">
+        <div class="score">
+            <h3>Score: <span id="result">0</span></h3>
+        </div>
+
+        <!-- Light / dark button -->
+        <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+    </header>
+
+    <!-- Start menu -->
+    <section id="startMenu" class="menu">
+        <h2>Select difficulty</h2>
+        <select id="difficulty">
+            <option value="easy">Easy (4 pairs)</option>
+            <option value="medium">Medium (6 pairs)</option>
+            <option value="hard">Hard (9 pairs)</option>
+        </select>
+        <button id="startBtn">Start game</button>
+    </section>
+
+    <!-- Game board -->
+    <main>
+        <div class="grid"></div>
+    </main>
 </body>
+
 </html>
