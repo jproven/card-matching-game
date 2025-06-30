@@ -4,6 +4,16 @@
   --text: #000000;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
@@ -51,19 +61,20 @@ body.dark {
 /* ---------- Game board styles ---------- */
 .grid {
   display: grid;
-  gap: .5rem;
-  padding: 1rem;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  width: 100vw;
+  box-sizing: border-box;
 }
 
 /* Card styles */
 .grid img {
   width: 100%;
-  height: auto;
-  max-width: 120px;
-  cursor: pointer;
-  border-radius: .25rem;
+  aspect-ratio: 2 / 3;
   object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 /* Hide matched cards */
@@ -87,6 +98,6 @@ body.dark {
 
 @media (min-width: 901px) {
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 }
