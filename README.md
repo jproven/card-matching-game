@@ -31,5 +31,5 @@ No commercial use is intended.
    ```bash
    git clone https://github.com/your-username/tarot-memory-match.git
    cd tarot-memory-match
-2. Open index.html in your browser
+2. **Open index.html in your browser**
    That’s it. No installation or dependencies required.
