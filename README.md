@@ -20,10 +20,12 @@ No commercial use is intended.
 
 ## 📂 Project Structure
 
-├── index.html # HTML layout
-├── styles.css # Styling and responsiveness
-├── app.js # Game logic in JavaScript
-└── images/ # Balatro tarot card images
+    /project-root
+    │
+    ├── index.html        # HTML layout
+    ├── styles.css        # Styling and responsiveness
+    ├── app.js            # Game logic in JavaScript
+    └── images/           # Balatro tarot card images
 
 ## 🚀 How to Play Locally
 
